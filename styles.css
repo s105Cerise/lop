@@ -17,7 +17,7 @@ html, body {
 .center-box {
   background-color: blanchedalmond;
   text-align: center;
-  height: 80vh;
+  height: 90vh;
   width: 80vw;
   padding: 20px;
   box-sizing: border-box;
@@ -53,6 +53,14 @@ input[type=text] {
   border-radius:10px;
 }
 
+@media only screen 
+  and (max-device-width: 500px) 
+ {
+  input[type=text] {
+    font-size: 1.5em;
+  }
+}
+
 .center-text {
   text-align: center;
 }
@@ -65,6 +73,15 @@ img {
   width: 50px;
   height: 50px;
   vertical-align: bottom;
+}
+
+@media only screen 
+  and (max-device-width: 500px) 
+ {
+  img {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 button {
