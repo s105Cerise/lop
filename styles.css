@@ -67,16 +67,6 @@ img {
   vertical-align: bottom;
 }
 
-@media only screen 
-  and (max-device-width: 500px) 
- {
-  img {
-    width: 70px;
-    height: 70px;
-    vertical-align: bottom;
-  }
-}
-
 button {
   margin-top: 20px;
   padding:10px;
