@@ -38,8 +38,8 @@ html, body {
   and (max-device-width: 500px) 
  {
   .center-box{
-    height: 50vh;
-    width: 80vw;
+    height: 300px;
+    width: 300px;
   }
 }
 *:focus {outline:none !important}
