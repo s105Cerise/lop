@@ -7,9 +7,9 @@ function craftSteward() {
   const craftedStewardRobe = Math.trunc(servantRobe / 3);
   const craftedStewardBelt = Math.trunc(servantBelt / 3);
 
-  let stewardHat = Number(document.getElementById('stewardHat').value);
-  let stewardRobe = Number(document.getElementById('stewardRobe').value);
-  let stewardBelt = Number(document.getElementById('stewardBelt').value);
+  const stewardHat = Number(document.getElementById('stewardHat').value);
+  const stewardRobe = Number(document.getElementById('stewardRobe').value);
+  const stewardBelt = Number(document.getElementById('stewardBelt').value);
 
   document.getElementById('servantHat').value = (servantHat % 3)
   document.getElementById('servantRobe').value = (servantRobe % 3)
@@ -29,9 +29,9 @@ function craftCurator() {
   const craftedCuratorRobe = Math.trunc(stewardRobe / 3);
   const craftedCuratorBelt = Math.trunc(stewardBelt / 3);
 
-  let curatorHat = Number(document.getElementById('curatorHat').value);
-  let curatorRobe = Number(document.getElementById('curatorRobe').value);
-  let curatorBelt = Number(document.getElementById('curatorBelt').value);
+  const curatorHat = Number(document.getElementById('curatorHat').value);
+  const curatorRobe = Number(document.getElementById('curatorRobe').value);
+  const curatorBelt = Number(document.getElementById('curatorBelt').value);
 
   document.getElementById('stewardHat').value = (stewardHat % 3)
   document.getElementById('stewardRobe').value = (stewardRobe % 3)
@@ -51,9 +51,9 @@ function craftDeputy() {
   const craftedDeputyRobe = Math.trunc(curatorRobe / 4);
   const craftedDeputyBelt = Math.trunc(curatorBelt / 4);
 
-  let deputyHat = Number(document.getElementById('deputyHat').value);
-  let deputyRobe = Number(document.getElementById('deputyRobe').value);
-  let deputyBelt = Number(document.getElementById('deputyBelt').value);
+  const deputyHat = Number(document.getElementById('deputyHat').value);
+  const deputyRobe = Number(document.getElementById('deputyRobe').value);
+  const deputyBelt = Number(document.getElementById('deputyBelt').value);
 
   document.getElementById('curatorHat').value = (curatorHat % 4)
   document.getElementById('curatorRobe').value = (curatorRobe % 4)
@@ -73,9 +73,9 @@ function craftChief() {
   const craftedChiefRobe = Math.trunc(deputyRobe / 5);
   const craftedChiefBelt = Math.trunc(deputyBelt / 5);
 
-  let chiefHat = Number(document.getElementById('chiefHat').value);
-  let chiefRobe = Number(document.getElementById('chiefRobe').value);
-  let chiefBelt = Number(document.getElementById('chiefBelt').value);
+  const chiefHat = Number(document.getElementById('chiefHat').value);
+  const chiefRobe = Number(document.getElementById('chiefRobe').value);
+  const chiefBelt = Number(document.getElementById('chiefBelt').value);
 
   document.getElementById('deputyHat').value = (deputyHat % 5)
   document.getElementById('deputyRobe').value = (deputyRobe % 5)
@@ -95,9 +95,9 @@ function craftArchChief() {
   const craftedArchiefRobe = Math.trunc(chiefRobe / 5);
   const craftedArchiefBelt = Math.trunc(chiefBelt / 5);
 
-  let archiefHat = Number(document.getElementById('archiefHat').value);
-  let archiefRobe = Number(document.getElementById('archiefRobe').value);
-  let archiefBelt = Number(document.getElementById('archiefBelt').value);
+  const archiefHat = Number(document.getElementById('archiefHat').value);
+  const archiefRobe = Number(document.getElementById('archiefRobe').value);
+  const archiefBelt = Number(document.getElementById('archiefBelt').value);
 
   document.getElementById('chiefHat').value = (chiefHat % 5)
   document.getElementById('chiefRobe').value = (chiefRobe % 5)
