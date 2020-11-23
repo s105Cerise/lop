@@ -19,6 +19,7 @@ html, body {
   align-items: baseline;
   align-content: center;
   border: 2px solid #f76707;
+  padding: 10px;
   background-color: #f3e7e3;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
