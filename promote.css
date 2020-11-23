@@ -3,10 +3,21 @@ html, body {
   font-family: 'Libre Franklin', sans-serif;
 }
 
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.how-to {
+  font-size: 0.8em;
+  margin-bottom: 30px;
+}
 .grid-container {
   display: grid;
-  align-items: center;
   justify-items: center;
+  align-items: baseline;
+  align-content: center;
   border: 2px solid #f76707;
   background-color: #f3e7e3;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -20,6 +31,14 @@ html, body {
     "deputy-hat deputy-robe deputy-belt deputy-craft"
     "chief-hat chief-robe chief-belt chief-craft"
     "archief-hat archief-robe archief-belt archief-craft";
+}
+
+@media only screen 
+  and (max-device-width: 500px) 
+ {
+  .grid-container {
+    max-width: 80vw;
+  }
 }
 
 .hat { grid-area: hat; }
@@ -95,11 +114,11 @@ img {
 }
 
 input[type=text] {
-  font-size: 1em;
+  font-size: 2em;
   text-align: center;
-  width: 35px;
+  width: 60px;
   padding: 10px;
-  margin: 10px;
+  margin: 5px;
   border:0;
   box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
   border-radius:5px;
@@ -108,18 +127,28 @@ input[type=text] {
 *:focus {outline:none !important}
 
 button {
-  width: 100px;
+  width: 80px;
   margin: 5px;
   padding:10px;
   border:none;
   background-color: tomato;
   color:#fff;
-  font-size: 1em;
+  font-size: 1.5em;
   border-radius:5px;
+}
+
+.clear-all {
+  width: 150px;
+  text-align: center;
 }
 
 .coffee {
   border: 0;
-  height: 32px;
+  height: 50px;
   width: 100px;
+}
+
+.footer {
+  font-size: 0.8em;
+  margin-top: 30px;
 }
