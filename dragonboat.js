@@ -1,12 +1,9 @@
 
-function craftSteward() {
-  const servantHat = document.getElementById('servantHat').value;
-  const servantRobe = document.getElementById('servantRobe').value;
-  const servantBelt = document.getElementById('servantBelt').value;
+function calcRaces() {
+  const itemCost = document.getElementById('itemCost').value;
+  const perfectRace = 65;
 
-  const craftedStewardHat = Math.trunc(servantHat / 3);
-  const craftedStewardRobe = Math.trunc(servantRobe / 3);
-  const craftedStewardBelt = Math.trunc(servantBelt / 3);
+  const racesRequired = Math.ceil(itemcost / perfectRace);
 
   const stewardHat = Number(document.getElementById('stewardHat').value);
   const stewardRobe = Number(document.getElementById('stewardRobe').value);
